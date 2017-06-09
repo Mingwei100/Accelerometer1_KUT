@@ -124,7 +124,7 @@ public class MainActivity extends Activity implements SensorEventListener {
             BufferedWriter bw = new BufferedWriter(osw);
             String str = new String("");
             for(int i = 0; i<printing.size(); i++) {
-                str = str+ "[" + printing.get(i).getX() + ";" + printing.get(i).getY() + ";" + printing.get(i).getZ();
+                str = str+ "[" + printing.get(i).getX() + ";" + printing.get(i).getY() + ";" + printing.get(i).getZ()+"],";
                 bw.write(str);
                 bw.flush();
             }
